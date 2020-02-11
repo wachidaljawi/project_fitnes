@@ -92,7 +92,25 @@ a ::after {
 
 .card {
     border: none;
-    height: 260px;
+    height: 300px;
+}
+
+.card :before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #e4381C;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.card :hover :before {
+    opacity: 1;
 }
 
 #gc {
@@ -172,4 +190,27 @@ a ::after {
     color: #ffffff;
     font-family: 'Nunito Sans', 'sans-serif';
     font-size: 16px;
+}
+
+.class-title {
+    background: url(../img/classes-title-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 60px;
+    padding-bottom: 62px;
+}
+
+.class-title h2 {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.class-title p {
+    font-family: 'Nunito Sans', 'sans-serif';
+    font-size: 16px;
+    color: #ffffff;
+
 }
